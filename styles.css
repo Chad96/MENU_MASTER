@@ -200,3 +200,48 @@ footer {
   border-radius: 5px;
   cursor: pointer;
 }
+
+/* Vegetarian Recipes Section */
+#vegetarian-recipes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px; /* Add gap between cards */
+}
+
+.vegetarian-recipes .recipe-card {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  margin: 0; /* Remove extra margin to use gap */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for movement effect */
+}
+
+.vegetarian-recipes .recipe-card:hover {
+  transform: translateY(-10px); /* Move card up on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow effect on hover */
+}
+
+.vegetarian-recipes .recipe-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.vegetarian-recipes .recipe-card h3 {
+  margin: 10px 0;
+}
+
+.vegetarian-recipes .view-recipe-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #ff6347;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
