@@ -128,8 +128,21 @@ header nav a {
   border-radius: 8px;
 }
 
-recipe-card h3 {
+.recipe-card h3 {
   margin: 10px 0;
+}
+
+.recipe-card p {
+  margin: 5px 0;
+}
+
+.view-recipe-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #ff6347;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 footer {
@@ -137,4 +150,53 @@ footer {
   color: #fff;
   text-align: center;
   padding: 10px 0;
+}
+
+.popular-recipes {
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.popular-recipes h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#popular-recipes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px; /* Add gap between cards */
+}
+
+.popular-recipes .recipe-card {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  margin: 0; /* Remove extra margin to use gap */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+}
+
+.popular-recipes .recipe-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.popular-recipes .recipe-card h3 {
+  margin: 10px 0;
+}
+
+.popular-recipes .view-recipe-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #ff6347;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
 }
