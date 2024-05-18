@@ -1,0 +1,140 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+header {
+  background-color: #ff6347;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  margin-left: auto;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 40px;
+  font-weight: 700;
+}
+
+.hero {
+  background: url("img/pexels-ella-olsson-572949-1640777.jpg") no-repeat center
+    center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+  margin-top: 80px;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin: 0 0 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin: 0 0 20px;
+}
+
+#search-bar {
+  padding: 10px;
+  width: 80%;
+  max-width: 500px;
+  border: none;
+  border-radius: 5px;
+  margin: 0 10px 10px 0;
+}
+
+#search-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #ff6347;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.features {
+  background-color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.features .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.feature {
+  flex: 1;
+  min-width: 250px;
+  margin: 20px;
+}
+
+.search-results {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.search-results .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#results-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.recipe-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  width: 300px;
+  text-align: left;
+}
+
+.recipe-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+recipe-card h3 {
+  margin: 10px 0;
+}
+
+footer {
+  background-color: #ff6347;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
