@@ -41,8 +41,7 @@ header nav a {
 }
 
 .hero {
-  background: url("img/pexels-ella-olsson-572949-1640777.jpg") no-repeat center
-    center/cover;
+  background: url("img/hero.jpg") no-repeat center center/cover;
   color: #fff;
   text-align: center;
   padding: 100px 20px;
