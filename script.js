@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
   async function searchRecipes(query) {
     try {
       const response = await fetch(
-        `https://api.spoonacular.com/recipes/complexSearch?query=${query}&apiKey=YOUR_API_KEY`
+        `https://api.spoonacular.com/recipes/complexSearch?query=${query}&apiKey=41f34ea8b8ad48078569526a1512216a`
       );
       const data = await response.json();
       displayResults(data.results);
