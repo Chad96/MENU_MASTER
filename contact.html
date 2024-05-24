@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Menu_Master</title>
+    <link rel="stylesheet" href="contact.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Menu_Master</h1>
+        <nav>
+          <a href="index.html">Home</a>
+
+          <a href="profile.html">Profile</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="contact-hero">
+        <div class="container">
+          <h2>Contact Us</h2>
+          <p>Please feel free to reach out to us using the form below.</p>
+        </div>
+      </section>
+      <section class="contact-form-section">
+        <div class="container">
+          <form
+            class="form"
+            method="POST"
+            action="https://formspree.io/f/xdoqyzgk"
+            id="contactForm"
+          >
+            <div class="flex">
+              <label>
+                <input
+                  required=""
+                  placeholder=""
+                  type="text"
+                  class="input"
+                  name="firstName"
+                />
+                <span>First Name</span>
+              </label>
+
+              <label>
+                <input
+                  required=""
+                  placeholder=""
+                  type="text"
+                  class="input"
+                  name="lastName"
+                />
+                <span>Last Name</span>
+              </label>
+            </div>
+
+            <label>
+              <input
+                required=""
+                placeholder=""
+                type="email"
+                class="input"
+                name="email"
+                id="email"
+              />
+              <span>Email</span>
+            </label>
+
+            <label>
+              <input
+                required=""
+                type="tel"
+                placeholder=""
+                class="input"
+                name="contactNumber"
+              />
+              <span>Contact Number</span>
+            </label>
+            <label>
+              <textarea
+                required=""
+                rows="3"
+                placeholder=""
+                class="input01"
+                name="message"
+                id="message"
+              ></textarea>
+              <span>Message</span>
+            </label>
+
+            <button type="submit" class="submit-button">
+              <span class="text">Submit</span>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <p>&copy; chad_codes 2024 Menu_Master. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="contact.js"></script>
+  </body>
+</html>
