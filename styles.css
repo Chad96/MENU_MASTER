@@ -94,6 +94,12 @@ header nav a {
   color: #fff;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background color and transform */
+}
+
+#search-button:hover {
+  background-color: #ff4500; /* Darker shade for hover effect */
+  transform: scale(1.05); /* Slightly increase the size on hover */
 }
 
 .features {
@@ -275,6 +281,11 @@ footer {
   border-radius: 5px;
   cursor: pointer;
 }
+.popular-recipes .view-recipe-button:hover {
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background color and transform */
+  background-color: #ff703c; /* Darker shade for hover effect */
+  transform: scale(1.05); /* Slightly increase the size on hover */
+}
 
 /* Vegetarian Recipes Section */
 #vegetarian-recipes {
@@ -327,4 +338,9 @@ footer {
   color: #fff;
   border-radius: 5px;
   cursor: pointer;
+}
+.vegetarian-recipes .view-recipe-button:hover {
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background color and transform */
+  background-color: #ff703c; /* Darker shade for hover effect */
+  transform: scale(1.05); /* Slightly increase the size on hover */
 }
