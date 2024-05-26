@@ -2,12 +2,12 @@ const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 3000;
 const { MongoClient } = require("mongodb");
+require("dotenv").config();
 
 // MongoDB connection string
-const mongoURI =
-  "mongodb+srv://chadrackndalamba:<ZeKDogpT52L9eB6e>@cluster0.jgsja19.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const mongoURI = process.env.MONGO_URI;
 // Database name
-const dbName = "YOUR_DATABASE_NAME";
+const dbName = process.env.DB_NAME;
 // MongoDB client
 const client = new MongoClient(mongoURI, {
   useNewUrlParser: true,
@@ -25,6 +25,9 @@ async function connectToMongoDB() {
 }
 
 connectToMongoDB();
+
+// Middleware to parse JSON request bodies
+app.use(express.json());
 
 // Define a route to handle saving a recipe
 app.post("/api/recipes", async (req, res) => {
