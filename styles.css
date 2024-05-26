@@ -393,3 +393,21 @@ footer {
   text-align: center;
   padding: 10px 0;
 }
+
+/* Add the following CSS for the save-recipe-button */
+
+.save-recipe-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #ff6347;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background color and transform */
+}
+
+.save-recipe-button:hover {
+  background-color: #ff4500; /* Darker shade for hover effect */
+  transform: scale(1.05); /* Slightly increase the size on hover */
+}
