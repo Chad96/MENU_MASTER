@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" />
+    <!-- Assuming your CSS file is named styles.css -->
+    <script defer src="login.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="login.html">Login</a></li>
+          <!-- Add other nav items here -->
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="form-container">
+        <h2>Login</h2>
+        <form id="login-form">
+          <label for="login-username">Username</label>
+          <input type="text" id="login-username" name="username" required />
+
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" name="password" required />
+
+          <button type="submit" class="form-button">Login</button>
+        </form>
+
+        <h2>Register</h2>
+        <form id="register-form">
+          <label for="register-username">Username</label>
+          <input type="text" id="register-username" name="username" required />
+
+          <label for="register-password">Password</label>
+          <input
+            type="password"
+            id="register-password"
+            name="password"
+            required
+          />
+
+          <button type="submit" class="form-button">Register</button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Your Site Name</p>
+    </footer>
+  </body>
+</html>
