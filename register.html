@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" href="login.css" />
+    <script type="module" src="register.js" defer></script>
     <script type="module" src="login.js" defer></script>
   </head>
   <body>
@@ -12,7 +13,7 @@
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="register.html">Sign Up</a></li>
+          <li><a href="login.html">Login</a></li>
           <!-- Add other nav items here -->
         </ul>
       </nav>
@@ -20,17 +21,20 @@
 
     <main>
       <div class="form-container">
-        <h2>Login</h2>
-        <form id="login-form">
-          <label for="login-email">Email</label>
-          <input type="email" id="login-email" name="email" required />
+        <h2>Sign Up</h2>
+        <form id="signup-form">
+          <label for="signup-email">Email</label>
+          <input type="email" id="signup-email" name="email" required />
 
-          <label for="login-password">Password</label>
-          <input type="password" id="login-password" name="password" required />
+          <label for="signup-password">Password</label>
+          <input
+            type="password"
+            id="signup-password"
+            name="password"
+            required
+          />
 
-          <button id="login-submit" type="submit" class="form-button">
-            Login
-          </button>
+          <button id="submit" type="submit" class="form-button">Sign Up</button>
         </form>
       </div>
     </main>

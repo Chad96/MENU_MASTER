@@ -411,3 +411,48 @@ footer {
   background-color: #ff4500; /* Darker shade for hover effect */
   transform: scale(1.05); /* Slightly increase the size on hover */
 }
+
+.menu-toggle {
+  display: none; /* Hide the toggle button by default */
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Show the toggle button on smaller screens */
+  }
+
+  nav {
+    display: none; /* Hide the navigation links by default */
+    flex-direction: column; /* Stack the navigation links vertically */
+    background-color: #ff6347;
+    width: 100%;
+    position: absolute;
+    top: 70px; /* Adjust based on the height of your header */
+    left: 0;
+  }
+
+  nav a {
+    padding: 10px 0;
+    text-align: center;
+    margin: 0;
+    border-top: 1px solid #fff;
+  }
+
+  nav a:hover {
+    background-color: #ff4500; /* Change background color on hover */
+  }
+
+  nav.show {
+    display: flex; /* Show the navigation links when .show is added */
+  }
+}
+@media (max-width: 480px) {
+  .hero {
+    margin-top: 185px; /* Increase margin-top for more space on mobile devices */
+  }
+}

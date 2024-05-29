@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script type="module" src="script.js" defer></script>
   </head>
   <body>
     <header>
@@ -17,13 +18,14 @@
           <img src="img/chef.png" alt="Logo" class="logo" />
           <span class="site-title">Menu_Master</span>
         </a>
-        <nav>
+        <nav id="main-nav">
+          <a href="about.html">About</a>
           <a href="contact.html" target="_blank" id="contact-link"
             >Contact Us</a
           >
-          <a href="about.html">About Us</a>
-          <a href="login.html">Log In</a>
+          <a href="register.html">Sign Up</a>
         </nav>
+        <button class="menu-toggle" id="menu-toggle">&#9776;</button>
       </div>
     </header>
     <section class="hero">
@@ -87,7 +89,6 @@
               <button class="view-recipe-button">View Recipe</button>
             </a>
           </div>
-
           <div class="recipe-card">
             <img src="img/smoke.jpg" alt="Recipe 2" />
             <h3>Sensational smoky steak marinade</h3>
@@ -124,7 +125,6 @@
         </div>
       </div>
     </section>
-
     <section id="vegetarian-recipes" class="vegetarian-recipes">
       <div class="container">
         <h2>Vegetarian Recipes</h2>
@@ -155,10 +155,7 @@
           </div>
           <div class="recipe-card">
             <img src="img/green.jpg" alt="Recipe 3" />
-            <h3>
-              Kung Pao Cauliflower <br />
-              Recipe
-            </h3>
+            <h3>Kung Pao Cauliflower <br />Recipe</h3>
             <p>Cooking Time: 25 mins</p>
             <p>Preparation Time: 10 mins</p>
             <a href="pdf recipe/Kung Pao Cauliflower.pdf" target="_blank">
@@ -182,6 +179,5 @@
         <p>&copy; chad_codes 2024 Menu_Master. All rights reserved.</p>
       </div>
     </footer>
-    <script src="script.js"></script>
   </body>
 </html>
