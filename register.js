@@ -31,7 +31,7 @@ document
       .then((userCredential) => {
         // Signed up
         const user = userCredential.user;
-        alert("Creating Account..");
+        alert("Account Created Successfully..");
         window.location.href = "login.html";
         console.log("User signed up:", user);
         // Redirect or show success message
