@@ -307,6 +307,7 @@ footer {
   .hero {
     padding: 70px 10px; /* Adjust padding for smaller screens */
     margin-top: 200px; /* Increase margin-top for mobile screens */
+    margin-right: -5.5%;
   }
 }
 
