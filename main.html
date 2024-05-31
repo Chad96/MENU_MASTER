@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu_Master</title>
+    <link rel="icon" href="img/chef.png" type="image/png" />
+
+    <link rel="stylesheet" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="main.html" class="logo-link">
+          <img src="img/chef.png" alt="Logo" class="logo" />
+          <span class="site-title">Menu_Master</span>
+        </a>
+        <nav id="main-nav">
+          <a href="about.html">About</a>
+          <a href="contact.html" target="_blank" id="contact-link"
+            >Contact Us</a
+          >
+          <a href="register.html">Sign Up</a>
+        </nav>
+        <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="container">
+        <h2>Discover Your Next Favorite Recipe</h2>
+        <p>
+          Search through a vast array of recipes tailored to your preferences
+          and dietary needs.
+        </p>
+        <input
+          type="text"
+          id="search-bar"
+          placeholder="Search for recipes..."
+        />
+        <button id="search-button">Search</button>
+      </div>
+    </section>
+    <section id="features" class="features">
+      <div class="container">
+        <h2>Why Choose Menu_Master?</h2>
+        <div class="feature">
+          <h3>Personalized Recommendations</h3>
+          <p>
+            Get recipes based on your taste preferences and dietary
+            restrictions.
+          </p>
+        </div>
+        <div class="feature">
+          <h3>Easy to Use</h3>
+          <p>
+            Simple and intuitive interface makes recipe searching effortless.
+          </p>
+        </div>
+        <div class="feature">
+          <h3>Save Your Favorites</h3>
+          <p>Bookmark and organize your favorite recipes for quick access.</p>
+        </div>
+      </div>
+    </section>
+    <section id="search-results" class="search-results">
+      <div class="container">
+        <h2>Search Results</h2>
+        <div id="results-container">
+          <!-- Search results will be displayed here -->
+        </div>
+      </div>
+    </section>
+    <section id="popular-recipes" class="popular-recipes">
+      <div class="container">
+        <h2>Popular Recipes</h2>
+        <div id="popular-recipes-container">
+          <div class="recipe-card">
+            <img src="img/2.jpg" alt="Recipe 1" />
+            <h3>Veggie-Packed Chicken Fried Rice</h3>
+            <p>Cooking Time: 25 mins</p>
+            <p>Preparation Time: 20 mins</p>
+            <a
+              href="pdf recipe/Veggie-Packed Chicken Fried Rice.pdf"
+              target="_blank"
+            >
+              <button class="view-recipe-button">View Recipe</button>
+            </a>
+          </div>
+          <div class="recipe-card">
+            <img src="img/smoke.jpg" alt="Recipe 2" />
+            <h3>Sensational smoky steak marinade</h3>
+            <p>Cooking Time: 8 mins</p>
+            <p>Preparation Time: 2 hrs</p>
+            <a
+              href="pdf recipe/Sensational smoky steak marinade.pdf"
+              target="_blank"
+            >
+              <button class="view-recipe-button">View Recipe</button>
+            </a>
+          </div>
+          <div class="recipe-card">
+            <img src="img/sea.jpg" alt="Recipe 3" />
+            <h3>Seafood Creole Recipe</h3>
+            <p>Cooking Time: 40 mins</p>
+            <p>Preparation Time: 30 mins</p>
+            <a href="pdf recipe/Seafood Creole.pdf" target="_blank">
+              <button class="view-recipe-button">View Recipe</button>
+            </a>
+          </div>
+          <div class="recipe-card">
+            <img src="img/veg.jpg" alt="Recipe 4" />
+            <h3>Mediterranean Rice Salad with Vegetables</h3>
+            <p>Cooking Time: 23 mins</p>
+            <p>Preparation Time: 20 mins</p>
+            <a
+              href="pdf recipe/Mediterranean Rice Salad with Vegetables.pdf"
+              target="_blank"
+            >
+              <button class="view-recipe-button">View Recipe</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="vegetarian-recipes" class="vegetarian-recipes">
+      <div class="container">
+        <h2>Vegetarian Recipes</h2>
+        <div id="vegetarian-recipes-container">
+          <div class="recipe-card">
+            <img src="img/bread.jpg" alt="Recipe 1" />
+            <h3>Spinach Coriander Chive Bread</h3>
+            <p>Cooking Time: 30 mins</p>
+            <p>Preparation Time: 10 mins</p>
+            <a
+              href="pdf recipe/Spinach Coriander Chive Bread.pdf"
+              target="_blank"
+            >
+              <button class="view-recipe-button">View Recipe</button>
+            </a>
+          </div>
+          <div class="recipe-card">
+            <img src="img/veg2.jpg" alt="Recipe 2" />
+            <h3>Pasta,Vegetables, Prosciutto</h3>
+            <p>Cooking Time: 45 mins</p>
+            <p>Preparation Time: 20 mins</p>
+            <a
+              href="pdf recipe/Pasta,Vegetables, Prosciutto.pdf"
+              target="_blank"
+            >
+              <button class="view-recipe-button">View Recipe</button>
+            </a>
+          </div>
+          <div class="recipe-card">
+            <img src="img/green.jpg" alt="Recipe 3" />
+            <h3>Kung Pao Cauliflower <br />Recipe</h3>
+            <p>Cooking Time: 25 mins</p>
+            <p>Preparation Time: 10 mins</p>
+            <a href="pdf recipe/Kung Pao Cauliflower.pdf" target="_blank">
+              <button class="view-recipe-button">View Recipe</button>
+            </a>
+          </div>
+          <div class="recipe-card">
+            <img src="img/veg5.jpg" alt="Recipe 4" />
+            <h3>Feta and Spinach Sandwich</h3>
+            <p>Cooking Time: 8 mins</p>
+            <p>Preparation Time: 10 mins</p>
+            <a href="pdf recipe/Feta and Spinach Sandwich.pdf" target="_blank">
+              <button class="view-recipe-button">View Recipe</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="contact">
+      <div class="container">
+        <p>&copy; chad_codes 2024 Menu_Master. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

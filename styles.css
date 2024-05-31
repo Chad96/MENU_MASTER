@@ -1,3 +1,4 @@
+/* Add this to the existing styles.css */
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -455,4 +456,70 @@ footer {
   .hero {
     margin-top: 185px; /* Increase margin-top for more space on mobile devices */
   }
+}
+
+.landing-hero {
+  background: url("img/blur2.jpg") no-repeat center center/cover;
+  color: #ffffff;
+  text-align: center;
+  padding: 100px 20px;
+  margin-top: 75px;
+}
+
+.landing-hero h2 {
+  font-size: 3em;
+  margin: 0 0 10px;
+}
+
+.landing-hero p {
+  font-size: 1.2em;
+  margin: 0 0 20px;
+  color: #ffffff;
+}
+
+.explore-button {
+  padding: 15px 30px;
+  border: none;
+  background-color: #ff6347;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.explore-button:hover {
+  background-color: #ff4500;
+  transform: scale(1.05);
+}
+.gallery {
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.gallery h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Gap between images */
+  flex-wrap: wrap; /* Allow wrapping of images on smaller screens */
+}
+
+.gallery-image {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
+}
+
+.gallery-image:hover {
+  transform: translateY(-10px); /* Move image up on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow effect on hover */
 }

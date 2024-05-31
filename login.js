@@ -34,7 +34,7 @@ document
         console.log("User signed in:", user);
         alert("Login Successful..");
         // Redirect or show success message
-        window.location.href = "index.html"; // Redirect to a dashboard page or another page after successful login
+        window.location.href = "main.html"; // Redirect to a dashboard page or another page after successful login
       })
       .catch((error) => {
         const errorCode = error.code;
