@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background-color: #727272;
+  background-color: #ff6347;
   color: #fff;
   padding: 10px 0;
 }
@@ -35,7 +35,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #ff6347;
+  color: #d4b1ab;
 }
 
 main {
@@ -43,7 +43,7 @@ main {
 }
 
 .about-hero {
-  background-color: #ff6347;
+  background-color: #b1b1b1;
   color: #fff;
   padding: 20px 0;
   text-align: center;
@@ -80,7 +80,7 @@ main {
 }
 
 footer {
-  background-color: #686868;
+  background-color: #ff6347;
   color: #fff;
   text-align: center;
   padding: 10px 0;

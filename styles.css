@@ -56,21 +56,13 @@ header nav a:hover {
 .logo {
   width: 40px;
   height: 40px;
-  margin-right: 10px;
+  margin-left: -60%;
 }
 
 .site-title {
   color: white;
   font-size: 24px;
   font-weight: 700;
-}
-
-.hero {
-  background: url("img/blur2.jpg") no-repeat center center/cover;
-  color: #ffffff;
-  text-align: center;
-  padding: 100px 20px;
-  margin-top: 75px;
 }
 
 .hero h2 {
@@ -88,86 +80,6 @@ header nav a:hover {
   animation: fadeInUp 1s forwards;
 }
 
-#search-bar {
-  padding: 10px;
-  width: 80%;
-  max-width: 500px;
-  border: none;
-  border-radius: 5px;
-  margin: 0 10px 10px 0;
-}
-
-#search-button {
-  padding: 10px 20px;
-  border: none;
-  background-color: #ff6347;
-  color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background color and transform */
-}
-
-#search-button:hover {
-  background-color: #ff4500; /* Darker shade for hover effect */
-  transform: scale(1.05); /* Slightly increase the size on hover */
-}
-
-.features {
-  background-color: #fff;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.features .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 20px; /* Add gap between features */
-}
-
-.features h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 1s forwards;
-}
-
-.feature {
-  flex: 1;
-  min-width: 250px;
-  margin: 20px;
-  background-color: #f8f8f8;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 1s forwards;
-}
-
-.feature:nth-child(1) {
-  animation-delay: 0.3s;
-}
-
-.feature:nth-child(2) {
-  animation-delay: 0.6s;
-}
-
-.feature:nth-child(3) {
-  animation-delay: 0.9s;
-}
-
-.feature h3 {
-  margin-top: 0;
-  font-size: 1.5em;
-  color: #ff6347;
-}
-
-.feature p {
-  color: #666;
-}
-
 /* Keyframes for fadeInUp animation */
 @keyframes fadeInUp {
   0% {
@@ -180,246 +92,11 @@ header nav a:hover {
   }
 }
 
-.search-results {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.search-results .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-#results-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.recipe-card {
-  flex: 1;
-  min-width: 250px;
-  max-width: 300px;
-  margin: 0; /* Remove extra margin to use gap */
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  text-align: left;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for movement effect */
-}
-
-.recipe-card:hover {
-  transform: translateY(-10px); /* Move card up on hover */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow effect on hover */
-}
-
-.recipe-card img {
-  width: 100%;
-  border-radius: 8px;
-}
-
-.recipe-card h3 {
-  margin: 10px 0;
-}
-
-.view-recipe-button {
-  padding: 10px 20px;
-  border: none;
-  background-color: #ff6347;
-  color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background color and transform */
-}
-
-.view-recipe-button:hover {
-  background-color: #ff4500; /* Darker shade for hover effect */
-  transform: scale(1.05); /* Slightly increase the size on hover */
-}
-
-.recipe-card img {
-  width: 100%;
-  border-radius: 8px;
-}
-
-.recipe-card h3 {
-  margin: 10px 0;
-}
-
-.view-recipe-button {
-  padding: 10px 20px;
-  border: none;
-  background-color: #ff6347;
-  color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
 footer {
   background-color: #ff6347;
   color: #fff;
   text-align: center;
   padding: 10px 0;
-}
-
-.popular-recipes {
-  padding: 40px 20px;
-  background-color: #fff;
-  text-align: center;
-}
-
-.popular-recipes h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-
-#popular-recipes-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px; /* Add gap between cards */
-}
-
-.popular-recipes .recipe-card {
-  flex: 1;
-  min-width: 250px;
-  max-width: 300px;
-  margin: 0; /*
-.popular-recipes .recipe-card {
-  flex: 1;
-  min-width: 250px;
-  max-width: 300px;
-  margin: 0; /* Remove extra margin to use gap */
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  text-align: left;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for movement effect */
-}
-
-.popular-recipes .recipe-card:hover {
-  transform: translateY(-10px); /* Move card up on hover */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow effect on hover */
-}
-
-.popular-recipes .recipe-card img {
-  width: 100%;
-  border-radius: 8px;
-}
-
-.popular-recipes .recipe-card h3 {
-  margin: 10px 0;
-}
-
-.popular-recipes .view-recipe-button {
-  padding: 10px 20px;
-  border: none;
-  background-color: #ff6347;
-  color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.popular-recipes .view-recipe-button:hover {
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background color and transform */
-  background-color: #ff703c; /* Darker shade for hover effect */
-  transform: scale(1.05); /* Slightly increase the size on hover */
-}
-
-/* Vegetarian Recipes Section */
-#vegetarian-recipes {
-  text-align: center;
-}
-
-#vegetarian-recipes h2 {
-  margin: 0 auto 20px; /* Center the heading */
-  padding-top: 10%;
-}
-#vegetarian-recipes-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px; /* Add gap between cards */
-}
-
-.vegetarian-recipes .recipe-card {
-  flex: 1;
-  min-width: 250px;
-  max-width: 300px;
-  margin: 0; /* Remove extra margin to use gap */
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  text-align: left;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for movement effect */
-}
-
-.vegetarian-recipes .recipe-card:hover {
-  transform: translateY(-10px); /* Move card up on hover */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow effect on hover */
-}
-
-.vegetarian-recipes .recipe-card img {
-  width: 100%;
-  border-radius: 8px;
-}
-
-.vegetarian-recipes .recipe-card h3 {
-  margin: 10px 0;
-}
-
-.vegetarian-recipes .view-recipe-button {
-  padding: 10px 20px;
-  border: none;
-  background-color: #ff6347;
-  color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.vegetarian-recipes .view-recipe-button:hover {
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background color and transform */
-  background-color: #ff703c; /* Darker shade for hover effect */
-  transform: scale(1.05); /* Slightly increase the size on hover */
-}
-
-footer {
-  background-color: #ff6347;
-  color: #fff;
-  text-align: center;
-  padding: 10px 0;
-}
-
-/* Add the following CSS for the save-recipe-button */
-
-.save-recipe-button {
-  padding: 10px 20px;
-  border: none;
-  background-color: #ff6347;
-  color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-left: 10px;
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background color and transform */
-}
-
-.save-recipe-button:hover {
-  background-color: #ff4500; /* Darker shade for hover effect */
-  transform: scale(1.05); /* Slightly increase the size on hover */
-}
-
-.menu-toggle {
-  display: none; /* Hide the toggle button by default */
-  background: none;
-  border: none;
-  color: white;
-  font-size: 1.5em;
-  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -454,7 +131,7 @@ footer {
 }
 @media (max-width: 480px) {
   .hero {
-    margin-top: 185px; /* Increase margin-top for more space on mobile devices */
+    margin-top: 90%; /* Increase margin-top for more space on mobile devices */
   }
 }
 
@@ -597,4 +274,44 @@ footer {
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+/* Updated Media Queries */
+@media only screen and (max-width: 768px) {
+  header nav {
+    justify-content: center; /* Center align the navigation links */
+  }
+
+  header nav a {
+    margin-left: 0; /* Remove left margin */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header .container {
+    flex-direction: column; /* Stack logo and navigation vertically */
+    align-items: center;
+    margin-left: 20%;
+  }
+
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  header nav a {
+    margin: 5px 0;
+  }
+
+  .hero {
+    padding: 70px 10px; /* Adjust padding for smaller screens */
+    margin-top: 200px; /* Increase margin-top for mobile screens */
+  }
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
