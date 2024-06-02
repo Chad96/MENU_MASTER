@@ -316,3 +316,24 @@ footer {
   max-width: 1200px;
   margin: 0 auto;
 }
+.aligned-list {
+  list-style-type: none; /* Remove default bullet points */
+  margin: 0;
+  padding: 0;
+  margin-left: 42%;
+}
+
+.aligned-list li {
+  display: flex;
+  align-items: flex-start; /* Align items at the start */
+  margin-bottom: 10px; /* Add space between list items */
+  line-height: 1.5; /* Set line height for better readability */
+}
+
+.aligned-list li::before {
+  content: "•"; /* Add bullet point manually */
+  margin-right: 10px; /* Space between bullet and text */
+  font-size: 1.5em; /* Adjust size as needed */
+  line-height: 1; /* Ensure bullet point is vertically centered */
+  color: #ff4500;
+}
