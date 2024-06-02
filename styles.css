@@ -320,7 +320,6 @@ footer {
   list-style-type: none; /* Remove default bullet points */
   margin: 0;
   padding: 0;
-  margin-left: 42%;
 }
 
 .aligned-list li {
@@ -332,8 +331,36 @@ footer {
 
 .aligned-list li::before {
   content: "•"; /* Add bullet point manually */
-  margin-right: 10px; /* Space between bullet and text */
+  margin-right: 5px; /* Reduced space between bullet and text */
   font-size: 1.5em; /* Adjust size as needed */
   line-height: 1; /* Ensure bullet point is vertically centered */
   color: #ff4500;
+}
+
+@media (min-width: 481px) {
+  .aligned-list {
+    margin-left: 42%;
+  }
+}
+
+@media (max-width: 480px) {
+  .aligned-list {
+    margin-left: 20%; /* Adjust for smaller screens */
+    align-items: flex-start;
+  }
+}
+@media (max-width: 480px) {
+  .aligned-list {
+    list-style-type: none; /* Remove default bullet points */
+    margin: 0;
+    padding: 0;
+  }
+}
+@media (max-width: 480px) {
+  .aligned-list li {
+    display: flex;
+    align-items: flex-start; /* Align items at the start */
+    margin-bottom: 10px; /* Add space between list items */
+    line-height: 1.5; /* Set line height for better readability */
+  }
 }
